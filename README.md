@@ -35,3 +35,20 @@ Using Lambda allows us to tailor our rotation logic precisely, including additio
 
 
 🌐 Benefits: Automating this process enhances our security posture, reduces human error, and ensures our systems are always up to date with the latest credentials.
+
+
+
+
+
+Deploying AWS CloudFormation Stack for Oracle RDS Instance
+
+# Deploy the Stack
+
+
+Deploy the CloudFormation stack using AWS CLI:
+
+aws cloudformation create-stack \
+  --stack-name MyRDSStack \
+  --template-body file://path/to/your/template.yaml \
+  --parameters file://path/to/your/parameters.json \
+  --capabilities CAPABILITY_IAM
